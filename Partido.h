@@ -10,11 +10,14 @@ using namespace std;
 
 struct Partido{
     //Atributos Reglas de negocio:
-	string nombre;
-    string representante_legal;
-    
+	string nombre, representanteLegal;
+	
     //Atributos Funcionales
     lista<Ciudad> ciudadesActivas;
-};    
+    
+    //Constructor
+    Partido(string nombre_, string representanteLegal_) : nombre(nombre_), representanteLegal(representanteLegal_) {}
+    
+	};
 
 #endif

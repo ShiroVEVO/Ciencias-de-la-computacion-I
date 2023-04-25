@@ -7,6 +7,8 @@ template <class T>
 struct nodo {	//Estructura que consta de un dato y apunta a otra estructura de su misma naturaleza
 	T Dato;
     nodo<T> * sig;
+    
+    nodo(T Dato_, nodo<T> *sig_ = nullptr) : Dato(Dato_), sig(sig_) {}
 };
 
 
